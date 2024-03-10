@@ -1,3 +1,11 @@
+name: Build and Distribute Android App
+on:
+  workflow_dispatch:
+    inputs:
+      version-number:
+        description: "Version Number"
+      build-number:
+        description: "Build Number"
 jobs:
   android-build:
     name: Android Build
